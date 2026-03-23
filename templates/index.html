@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Phishing Threat Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="grid-overlay"></div>
+        <div class="radar-scan"></div>
+        <div class="glowing-orb"></div>
+        <div class="glowing-orb orb-2"></div>
+    </div>
+    
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="logo">
+                <span class="shield-icon">🛡️</span>
+                <h1>Advanced Phishing Threat Intelligence</h1>
+            </div>
+            <p class="description">AI-Powered URL Analysis • Lexical Entropy • OSINT • Threat Scoring</p>
+        </header>
+
+        <main class="dashboard-main">
+            <!-- INPUT PANEL -->
+            <section class="panel input-panel">
+                <form id="url-form">
+                    <div class="input-group">
+                        <div class="input-icon">🔍</div>
+                        <input type="url" id="url-input" placeholder="Enter target URL for deep analysis..." required autocomplete="off">
+                        <button type="submit" id="scan-btn" class="btn-primary">
+                            <span class="btn-text">INITIATE SCAN</span>
+                            <div class="spinner hidden" id="loading-spinner"></div>
+                        </button>
+                    </div>
+                </form>
+                <div id="error-container" class="error-box hidden">
+                    <span class="error-icon">⚠️</span> <span id="error-text"></span>
+                </div>
+            </section>
+
+            <!-- RESULTS DASHBOARD (Hidden Initially) -->
+            <div id="results-dashboard" class="results-dashboard hidden">
+                
+                <!-- TOP STATS: Risk Score & Status -->
+                <section class="panel stats-panel">
+                    <div class="risk-meter-container">
+                        <div class="risk-circle-wrapper">
+                            <svg class="risk-circle" viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" id="risk-progress" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283"></circle>
+                            </svg>
+                            <div class="risk-value">
+                                <span id="risk-score">0</span>%
+                            </div>
+                        </div>
+                        <h3 class="risk-label">THREAT PROBABILITY</h3>
+                    </div>
+
+                    <div class="status-container">
+                        <h2 id="overall-status">AWAITING SCAN</h2>
+                        <div class="target-url-box">
+                            <span class="target-label">TARGET:</span>
+                            <span id="result-url" class="truncate"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="dashboard-grid">
+                    <!-- DETECTION REASONS (Threat Matrix) -->
+                    <section class="panel reasons-panel">
+                        <div class="panel-header">
+                            <h3><span class="icon">🚨</span> Threat Matrix Log</h3>
+                        </div>
+                        <div class="reasons-content">
+                            <ul id="reasons-list" class="reasons-list">
+                                <!-- Populated by JS -->
+                            </ul>
+                            <div id="no-threats-msg" class="hidden success-msg">
+                                <span class="icon">✅</span> No critical threats detected in heuristics.
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- RAW FEATURE DATA -->
+                    <section class="panel features-panel">
+                        <div class="panel-header">
+                            <h3><span class="icon">📊</span> Lexical Telemetry</h3>
+                        </div>
+                        <div class="features-grid" id="features-grid">
+                            <!-- Populated by JS -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+        </main>
+        
+        <footer class="dashboard-footer">
+            <p>System v2.0 • Machine Learning Classifier Active • For Educational Security Purposes</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
