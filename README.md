@@ -91,3 +91,18 @@ GitHub: https://github.com/Anil75594
 ---
 
 ## If you found this useful, consider giving it a star!
+
+
+Output:
+
+<img width="1470" height="706" alt="1" src="https://github.com/user-attachments/assets/42a83c26-fecd-4d3e-8776-482f40ac92bd" />
+
+<img width="1470" height="726" alt="2" src="https://github.com/user-attachments/assets/875ba1aa-8259-4403-8a47-406877661315" />
+
+<img width="1470" height="722" alt="3" src="https://github.com/user-attachments/assets/c26b774b-c1d1-4f14-981a-008bb0615cc2" />
+
+<img width="1470" height="720" alt="4" src="https://github.com/user-attachments/assets/593ed196-9ce6-4c19-b9d3-15cccfc6b705" />
+
+<img width="1465" height="713" alt="5" src="https://github.com/user-attachments/assets/8a2c93c9-365b-4c54-a7de-f6fcc4642f1f" />
+
+
