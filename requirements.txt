@@ -1,10 +1,9 @@
-flask==2.3.3
-scikit-learn==1.3.2
-pandas==2.1.1
-numpy==1.26.0
+Flask==2.3.3
+scikit-learn==1.2.2
+pandas==2.0.3
+numpy==1.24.4
 joblib==1.3.2
 urllib3
-python-whois
+whois
 tldextract
-python-Levenshtein==0.23.0
-gunicorn
+python-Levenshtein
